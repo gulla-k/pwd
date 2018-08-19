@@ -21,35 +21,55 @@
 		</section>
 		<div class="colorlib-blog">
 			<div class="container">
-	{% if latest_post_list %}
-		<div class="row">
-	    {% for post in latest_post_list %}
-			<div class="col-md-4 animate-box">
-				<article>
-					<h2><a href="/blog/{{ post.id }}/">{{ post.post_title }}</a></h2>
-					<p class="admin"><span>{{ post.pub_date|date:"F j, Y" }}</span></p>
-					<p>{{ post.post_description }}</p>
-					<p class="author-wrap"><a href="#" class="author-img" style="background-image: url({% static 'blog/images/person1.jpg' %});"></a> <a href="#" class="author">{{ post.post_author }}</a></p>
-				</article>
-			</div>
-	    {% endfor %}
-		</div>
+		        <div class="row">
+			    {% for post in posts %}
+					<div class="col-md-4 animate-box">
+						<article>
+							<h2><a href="/blog/{{ post.id }}/">{{ post.post_title }}</a></h2>
+							<p class="admin"><span>{{ post.pub_date|date:"F j, Y" }}</span></p>
+							<p>{{ post.post_description }}</p>
+							<p class="author-wrap"><a href="#" class="author-img" style="background-image: url({% static 'blog/images/person1.jpg' %});"></a> <a href="#" class="author">{{ post.post_author }}</a></p>
+						</article>
+					</div>
+			    {% endfor %}
+				</div>
 				<div class="row">
 					<div class="col-md-12 text-center">
 						<ul class="pagination">
-							<li class="disabled"><a href="#">&laquo;</a></li>
-							<li class="active"><a href="#">1</a></li>
-							<li><a href="#">2</a></li>
-							<li><a href="#">3</a></li>
-							<li><a href="#">4</a></li>
-							<li><a href="#">&raquo;</a></li>
+						    {% if posts.has_previous %}
+						        <li><a href="?page={{ posts.previous_page_number }}"><<</a></li>
+						    {% else %}
+						    	<li class="disabled"><a><<</a></li>
+						    {% endif %}
+
+							{% if posts.number|add:'-4' > 1 %}
+							    <li><a href="?page={{ posts.number|add:'-5' }}">...</a></li>
+							{% endif %}
+
+
+
+							{% for i in posts.paginator.page_range %}
+							    {% if posts.number == i %}
+							        <li class="active"><a>{{ i }}</a></li>
+							    {% elif i > posts.number|add:'-5' and i < posts.number|add:'5' %}
+							        <li><a href="?page={{ i }}">{{ i }}</a></li>
+							    {% endif %}
+							{% endfor %}
+
+
+
+							{% if posts.paginator.num_pages > posts.number|add:'4' %}
+							    <li><a href="?page={{ posts.number|add:'5' }}">...</a></li>
+							{% endif %}
+
+						    {% if posts.has_next %}
+						        <li><a href="?page={{ posts.next_page_number }}">>></a></li>
+						    {% else %}
+						    	<li class="disabled"><a>>></a></li>
+						    {% endif %}
 						</ul>
 					</div>
 				</div>
 			</div>
 		</div>
-	{% else %}
-	    <p>No polls are available.</p>
-	{% endif %}
-
 {% endblock %}
