@@ -2,6 +2,7 @@
 *~
 __pycache__
 myvenv
-/static
+blog/static
+home/static
 .DS_Store
 /web/settings.py
