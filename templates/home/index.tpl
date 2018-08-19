@@ -12,7 +12,7 @@
 						<div class="col-md-12 col-md-offset-0">
 							<div class="animate-box">
 								<h2>Создаём для вас с любовью</h2>
-								<p>использую Django, Bootstrap</p>
+								<p>используя Django, Bootstrap</p>
 								<p><a href="../project" class="btn btn-primary btn-lg btn-custom">Проекты</a></p>
 							</div>
 						</div>
