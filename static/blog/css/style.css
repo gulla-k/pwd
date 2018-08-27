@@ -312,7 +312,7 @@ h1, h2, h3, h4, h5, h6, figure {
         position: relative; }
     .video-hero .display-tc h2 {
       color: #fff;
-      font-size: 60px;
+      font-size: 45px;
       margin-bottom: 20px;
       font-weight: 300; }
       @media screen and (max-width: 768px) {
@@ -322,7 +322,7 @@ h1, h2, h3, h4, h5, h6, figure {
       font-family: "Nunito", Arial, sans-serif;
       color: #fff;
       font-weight: 200;
-      font-size: 30px; }
+      font-size: 25px; }
     .video-hero .display-tc p.breadcrumbs {
       font-size: 14px; }
       .video-hero .display-tc p.breadcrumbs span {

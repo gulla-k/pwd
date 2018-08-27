@@ -11,8 +11,8 @@
 					<div class="container">
 						<div class="col-md-12 col-md-offset-0">
 							<div class="animate-box">
-								<h2>Создаём для вас с любовью</h2>
-								<p>используя Django, Bootstrap</p>
+								<h2>Создание и разработка сайтов</h2>
+								<p>Django, Bootstrap, Vue.JS</p>
 								<p><a href="../project" class="btn btn-primary btn-lg btn-custom">Проекты</a></p>
 							</div>
 						</div>
@@ -41,7 +41,7 @@
 						<div class="item">
 							<div class="col-md-8 col-md-offset-2">
 								<div class="featured-entry">
-									<img class="img-responsive" src="{% static 'blog/images/dashboard_full_3.png' %}" alt="">
+									<img class="img-responsive" src="{% static 'blog/images/dashboard_full_3.jpg' %}" alt="">
 								</div>
 							</div>
 						</div>
@@ -59,8 +59,8 @@
 								<i class="icon-browser"></i>
 							</span>
 							<div class="desc">
-								<h3>Create your own template</h3>
-								<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+								<h3>Разработка макета</h3>
+								<p>Старательные руки дизайнера создадут уникальный макет сайта.</p>
 							</div>
 						</div>
 					</div>
@@ -70,8 +70,8 @@
 								<i class="icon-download"></i>
 							</span>
 							<div class="desc">
-								<h3>Automatic Backup Data</h3>
-								<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+								<h3>Установка и настройка</h3>
+								<p>Произведём установку и настройку серверного ПО под ваш сайт.</p>
 							</div>
 						</div>
 					</div>
@@ -81,8 +81,8 @@
 								<i class="icon-layers"></i>
 							</span>
 							<div class="desc">
-								<h3>Page Builder</h3>
-								<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+								<h3>Модульность</h3>
+								<p>Каждый раздел сайта является отдельным модулем.</p>
 							</div>
 						</div>
 					</div>

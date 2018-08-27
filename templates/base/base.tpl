@@ -69,9 +69,9 @@
 		<footer id="colorlib-footer">
 			<div class="container">
 				<div class="row row-pb-md">
-					<div class="col-md-3 colorlib-widget">
+					<div class="col-md-4 colorlib-widget">
 						<h4>О сервисе</h4>
-						<p>Информационный материал сайта представляет собой интелектуальную собственность автора сайта.</p>
+						<p>Разработка сайта ведётся на языке программирования Python с использованием Open Source фреймворка Django для создания веб-приложений. Визуализация пишется на CSS фреймворке Bootstrap с использованием JavaScript фреймворка Vue.JS</p>
 						<p>
 							<ul class="colorlib-social-icons">
 								<li><a href="https://vk.com/gulla_k"><i class="icon-vk"></i></a></li>
@@ -81,7 +81,7 @@
 							</ul>
 						</p>
 					</div>
-					<div class="col-md-3 colorlib-widget">
+					<div class="col-md-4 colorlib-widget">
 						<h4>Информация</h4>
 						<p>
 							<ul class="colorlib-footer-links">
@@ -93,35 +93,7 @@
 						</p>
 					</div>
 
-					<div class="col-md-3 colorlib-widget">
-						<h4>Популярные посты</h4>
-						<div class="f-blog">
-							<a href="blog.html" class="blog-img" style="background-image: url({% static 'blog/images/blog-1.jpg' %});">
-							</a>
-							<div class="desc">
-								<h2><a href="blog.html">Photoshoot Technique</a></h2>
-								<p class="admin"><span>30 March 2018</span></p>
-							</div>
-						</div>
-						<div class="f-blog">
-							<a href="blog.html" class="blog-img" style="background-image: url({% static 'blog/images/blog-2.jpg' %});">
-							</a>
-							<div class="desc">
-								<h2><a href="blog.html">Camera Lens Shoot</a></h2>
-								<p class="admin"><span>30 March 2018</span></p>
-							</div>
-						</div>
-						<div class="f-blog">
-							<a href="blog.html" class="blog-img" style="background-image: url({% static 'blog/images/blog-3.jpg' %});">
-							</a>
-							<div class="desc">
-								<h2><a href="blog.html">Imahe the biggest photography studio</a></h2>
-								<p class="admin"><span>30 March 2018</span></p>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-md-3 colorlib-widget">
+					<div class="col-md-4 colorlib-widget">
 						<h4>Контакты</h4>
 						<ul class="colorlib-footer-links">
 							<li>Краснодарский край, Тихорецкий район<br> 352120, Тихорецк, ул. Октябрьская 24а</li>
