@@ -89,5 +89,5 @@
 				</div>
 			</div>
 		</div>
-
+{{request.path_info}}
 {% endblock %}

@@ -53,7 +53,7 @@
 						</div>
 						<div class="col-md-10 text-right menu-1">
 							<ul>
-								<li class="active"><a href="../blog/">Блог</a></li>
+								<li{% if request.path_info == '/blog/' %} class="active"{% endif %}><a href="../blog/">Блог</a></li>
 								<li><a href="../project/">Проекты</a></li>
 								<li><a href="../about/">Обо мне</a></li>
 								<li><a href="../contact/">Контакты</a></li>
@@ -109,7 +109,41 @@
 					<div class="row">
 						<div class="col-md-12 text-center">
 							<p>
-								Copyright &copy; 2018<br> Все права защищены
+								Copyright &copy; 2018<br> Все права защищены<br>
+								<!-- Yandex.Metrika informer -->
+<a href="https://metrika.yandex.ru/stat/?id=50118850&amp;from=informer"
+target="_blank" rel="nofollow"><img src="https://informer.yandex.ru/informer/50118850/3_0_CCCCCCFF_CCCCCCFF_0_uniques"
+style="width:88px; height:31px; border:0;" alt="Яндекс.Метрика" title="Яндекс.Метрика: данные за сегодня (просмотры, визиты и уникальные посетители)" /></a>
+<!-- /Yandex.Metrika informer -->
+
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yaCounter50118850 = new Ya.Metrika2({
+                    id:50118850,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true
+                });
+            } catch(e) { }
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://mc.yandex.ru/metrika/tag.js";
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+    })(document, window, "yandex_metrika_callbacks2");
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/50118850" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
 							</p>
 						</div>
 					</div>
