@@ -7,8 +7,8 @@
     <title>WebTo.Pro - {% block title %}{% endblock %}</title>
     <link rel="stylesheet" href="{% static 'blog/css/style.css' %}" />
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="" />
-	<meta name="keywords" content="" />
+	<meta name="description" content="Разработка сайта ведётся на языке программирования Python с использованием Open Source фреймворка Django для создания веб-приложений. Визуализация пишется на CSS фреймворке Bootstrap с использованием JavaScript фреймворка Vue.JS" />
+	<meta name="keywords" content="Тихорецк, Создание сайтов в городе Тихорецк, Разработка в городе Тихорецк" />
 	<meta name="author" content="" />
 	<meta name="yandex-verification" content="aea4dc21e25fdcc1" />
 
