@@ -2,11 +2,12 @@ import datetime
 
 from django.db import models
 from django.utils import timezone
+from django.contrib.auth.models import User
 
 class Post(models.Model):
     post_title = models.CharField(max_length=100)
     post_description = models.CharField(max_length=2500)
-    post_author = models.CharField(max_length=50)
+    post_author = models.ForeignKey(User, on_delete=models.SET_NULL, null=True, blank=True)
     post_like = models.IntegerField(default=0)
     pub_date = models.DateTimeField('Дата публикации поста')
 

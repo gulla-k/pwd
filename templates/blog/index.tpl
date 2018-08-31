@@ -28,7 +28,7 @@
 							<h2><a href="/blog/{{ post.id }}/">{{ post.post_title }}</a></h2>
 							<p class="admin"><span>{{ post.pub_date|date:"F j, Y" }}</span></p>
 							<p>{{ post.post_description }}</p>
-							<p class="author-wrap"><a href="#" class="author-img" style="background-image: url({% static 'blog/images/person1.jpg' %});"></a> <a href="#" class="author">{{ post.post_author }}</a></p>
+							<p class="author-wrap"><a href="#" class="author-img" style="background-image: url({% static 'blog/images/person1.jpg' %});"></a> <a href="/user/{{ post.post_author.id }}" class="author">{{ post.post_author }}</a></p>
 						</article>
 					</div>
 			    {% endfor %}
