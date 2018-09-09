@@ -14,7 +14,7 @@
 
 	<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Nunito:200,300,400" rel="stylesheet">
-	
+
 	<!-- Animate.css -->
 	<link rel="stylesheet" href="{% static 'blog/css/animate.css' %}" />
 	<!-- Icomoon Icon Fonts-->
@@ -41,7 +41,7 @@
 </head>
 
 <body>
-		
+
 	<div class="colorlib-loader"></div>
 
 	<div id="page">
@@ -55,9 +55,9 @@
 						<div class="col-md-10 text-right menu-1">
 							<ul>
 								<li{% if request.path_info == '/blog/' %} class="active"{% endif %}><a href="../blog/">Блог</a></li>
-								<li><a href="../project/">Проекты</a></li>
-								<li><a href="../about/">Обо мне</a></li>
-								<li><a href="../contact/">Контакты</a></li>
+								<li{% if request.path_info == '/project/' %} class="active"{% endif %}><a href="../project/">Проекты</a></li>
+								<li{% if request.path_info == '/about/' %} class="active"{% endif %}><a href="../about/">Обо мне</a></li>
+								<li{% if request.path_info == '/contact/' %} class="active"{% endif %}><a href="../contact/">Контакты</a></li>
 							</ul>
 						</div>
 					</div>
@@ -156,7 +156,7 @@ style="width:88px; height:31px; border:0;" alt="Яндекс.Метрика" tit
 	<div class="gototop js-top">
 		<a href="#" class="js-gotop"><i class="icon-arrow-up2"></i></a>
 	</div>
-	
+
 	<!-- jQuery -->
 	<script src="{% static 'blog/js/jquery.min.js' %}"></script>
 	<!-- jQuery Easing -->
