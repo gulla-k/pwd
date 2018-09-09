@@ -5,4 +5,4 @@ myvenv
 /static
 .DS_Store
 /web/settings.py
-*.SQLITE3
+*.sqlite3
