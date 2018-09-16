@@ -19,7 +19,7 @@
 					</div>
 				</div>
 			</div>
-		</section>		
+		</section>
 		<div class="colorlib-featured">
 			<div class="row animate-box">
 				<div class="featured-wrap">

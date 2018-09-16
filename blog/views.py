@@ -4,11 +4,13 @@ from django.template import RequestContext
 
 from .models import Post
 
-def index(request):
+def index(request, page):
     '''Show all news'''
+    if page is None:
+        page = 1
     posts_list = Post.objects.all().order_by('-pub_date')
     paginator = Paginator(posts_list, 6)
-    page = request.GET.get('page')
+    page = page
     try:
         posts = paginator.page(page)
     except PageNotAnInteger:
@@ -24,17 +26,6 @@ def index(request):
     }
     return render(request, 'blog/index.tpl', context)
 
-'''def index(request):
-    latest_post_list = Post.objects.order_by('-pub_date')
-    template = loader.get_template('blog/index.tpl')
-    list = Post.objects.all()
-    paginator = Paginator(list, 1)
-    context = {
-        'latest_post_list': latest_post_list,
-        'paginator' : paginator,
-    }
-    return HttpResponse(template.render(context, request))
-'''
 def blog(request, post_id):
     return HttpResponse("Блог %s." % post_id)
 

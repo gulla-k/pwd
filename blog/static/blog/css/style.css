@@ -7,7 +7,7 @@
 
 /* =======================================================
 *
-* 	Template Style 
+* 	Template Style
 *
 * ======================================================= */
 body {
@@ -43,12 +43,12 @@ body {
       content: ""; }
 
 a {
-  color: #4aca85;
+  color: white;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s; }
   a:hover, a:active, a:focus {
-    color: #4aca85;
+    color: white;
     outline: none;
     text-decoration: none; }
 
@@ -343,7 +343,10 @@ h1, h2, h3, h4, h5, h6, figure {
 .colorlib-services,
 #colorlib-contact,
 .colorlib-blog {
-  padding: 7em 0;
+  padding-top: 2em;
+  padding-right: 0px;
+  padding-bottom: 1em;
+  padding-left: 0px;
   clear: both; }
 
 .colorlib-bg-white {
@@ -539,23 +542,25 @@ h1, h2, h3, h4, h5, h6, figure {
     position: relative; }
     .work-grid .work-img .icon {
       position: absolute;
-      top: 0;
+      top: 60%;
       left: 0;
       right: 0;
       bottom: 0;
       width: 100%;
-      height: 270px;
+      height: 40%;
       content: '';
       display: table;
-      text-align: center;
-      background: #4aca85;
+      text-align: left;
+      padding-left: 10px;
+      background: #303133c7;
       opacity: 0;
       -webkit-transition: 0.3s;
       -o-transition: 0.3s;
       transition: 0.3s; }
       .work-grid .work-img .icon i {
         display: table-cell;
-        vertical-align: middle;
+        vertical-align: top;
+        margin-top: 10px;
         color: #fff;
         font-size: 20px; }
     .work-grid .work-img:hover .icon, .work-grid .work-img:focus .icon {
@@ -1067,7 +1072,7 @@ input[type="text"] {
 #colorlib-footer {
   background: #303133;
   color: rgba(255, 255, 255, 0.6) !important;
-  padding-top: 6em; }
+  padding-top: 4em; }
   #colorlib-footer .colorlib-widget p {
     font-size: 13px; }
   @media screen and (max-width: 768px) {
@@ -1107,7 +1112,7 @@ input[type="text"] {
     font-weight: 700; }
   #colorlib-footer .copy {
     background: #262626;
-    padding: 7em 0; }
+    padding: 2em 0; }
     #colorlib-footer .copy p {
       margin-bottom: 0;
       color: #fff;
@@ -1454,13 +1459,13 @@ input[type="text"] {
       opacity: 1; }
 
 .row-pb-lg {
-  padding-bottom: 7em !important; }
+  padding-bottom: 1em !important; }
 
 .row-pb-md {
-  padding-bottom: 5em !important; }
+  padding-bottom: 1em !important; }
 
 .row-pb-sm {
-  padding-bottom: 3em !important; }
+  padding-bottom: 1em !important; }
 
 .nopadding {
   padding: 0 !important;

@@ -26,8 +26,8 @@
 			    {% for post in posts %}
 					<div class="col-md-4 animate-box">
 						<div class="work-grid">
-							<a href="../media/{{ post.img }}" class="work-img" style="background-image: url(../media/{{ post.img }})">
-								<span class="icon"><i class="icon-plus2"></i></span>
+							<a href="../media/{{ post.img }}" class="work-img" style="background-image: url(../{{ post.img_thumb }})">
+								<div class="icon"><p class="breadcrumbs">Ghbdtn safdsf</p></div>
 							</a>
 						</div>
 					</div>

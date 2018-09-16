@@ -54,10 +54,13 @@
 						</div>
 						<div class="col-md-10 text-right menu-1">
 							<ul>
-								<li{% if request.path_info == '/blog/' %} class="active"{% endif %}><a href="../blog/">Блог</a></li>
-								<li{% if request.path_info == '/project/' %} class="active"{% endif %}><a href="../project/">Проекты</a></li>
-								<li{% if request.path_info == '/about/' %} class="active"{% endif %}><a href="../about/">Обо мне</a></li>
-								<li{% if request.path_info == '/contact/' %} class="active"{% endif %}><a href="../contact/">Контакты</a></li>
+								{% if request.path_info != '/' %}
+									<li><a href="/">Главная</a></li>
+								{% endif %}
+								<li{% if '/blog/' in request.path_info %} class="active"{% endif %}><a href="/blog/">Блог</a></li>
+								<li{% if request.path_info == '/project/' %} class="active"{% endif %}><a href="/project/">Проекты</a></li>
+								<li{% if request.path_info == '/about/' %} class="active"{% endif %}><a href="/about/">Обо мне</a></li>
+								<li{% if request.path_info == '/contact/' %} class="active"{% endif %}><a href="/contact/">Контакты</a></li>
 							</ul>
 						</div>
 					</div>
